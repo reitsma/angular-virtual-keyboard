@@ -1,6 +1,6 @@
 {
   "name": "angular-virtual-keyboard",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "An AngularJs Virtual Keyboard Interface based on GreyWyvern VKI",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/the-darc/angular-virtual-keyboard",
   "devDependencies": {
     "conventional-changelog": "0.0.16",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.5.2",
     "gulp-footer": "^1.0.5",
     "gulp-header": "^1.2.2",

@@ -1,7 +1,7 @@
 /**
  * angular-virtual-keyboard
  * An AngularJs Virtual Keyboard Interface based on GreyWyvern VKI
- * @version v0.4.3
+ * @version v0.4.4
  * @author the-darc <darc.tec@gmail.com>
  * @link https://github.com/the-darc/angular-virtual-keyboard
  * @license MIT
@@ -187,7 +187,7 @@ var VKI = function(customConfig, layout, deadKeys, keyInputCallback) {
   function hasSelectionStartEnd(elem) {
     var hasSelection = false;
     try {
-      hasSelection = !isNaN(elem.selectionStart) && !isNaN(elem.selectionEnd);
+        hasSelection = (typeof elem.selectionStart === 'number') && (typeof elem.selectionEnd === 'number');
     } catch(e) {};
     return hasSelection;
   }

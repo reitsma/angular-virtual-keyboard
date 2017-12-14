@@ -177,7 +177,7 @@ var VKI = function(customConfig, layout, deadKeys, keyInputCallback) {
   function hasSelectionStartEnd(elem) {
     var hasSelection = false;
     try {
-      hasSelection = !isNaN(elem.selectionStart) && !isNaN(elem.selectionEnd);
+        hasSelection = (typeof elem.selectionStart === 'number') && (typeof elem.selectionEnd === 'number');
     } catch(e) {};
     return hasSelection;
   }
